@@ -1,0 +1,231 @@
+*{
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 400px; 
+    align-content: center;  
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo{
+  position: absolute;
+    width: 300px;
+    z-index: 1;
+    top: 150px;
+    
+}
+
+.mapa {
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 400px;
+   border: none;
+}
+
+iframe {
+  background-image: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  border: none;
+  z-index: 0;
+}
+
+.imagen{
+    flex: 1;
+    display: inline-block;
+    width: 300px;
+    background-color: #d34e4e
+    }
+
+h1{ color: rgb(36, 88, 88);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(136, 145, 145, 0.041);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(241, 79, 79) ; 
+}
+.fondo{
+    height: 375px;
+    width: 100%;
+    
+    border-radius: 10px 10px 0px 0px;
+}
+.background-img{
+    object-fit: cover;
+    width: 100%;
+    height: 415px;
+}
+.texto {
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: #f51313;
+}
+.boton-whatsapp{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.boton-whatsapp button{
+    background-color: rgb(58, 168, 58);
+    color: #140909;
+    border: ridge;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.boton-whatsapp button:hover{
+    background-color: #ace429;
+}
+/*
+article{
+    background-color:goldenrod;
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+}*/
+
+/* Estilos para el contenedor principal */
+.card-container {
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: left;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    left: var(-10px);
+    place-items: left;
+    width: 100vw;
+    background-color: #923f07;
+  }
+  /* Estilo para cada card */
+  .card {
+    background-color: rgb(255, 147, 5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(250, 117, 117, 0.1);
+    overflow: hidden;
+    width: 80%;
+    place-content: center;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-10px); 
+  }
+  /* Estilos para el contenido de la card */
+  .card-content {
+    padding: 20px;
+    width: 100%;
+    place-items: center;
+  }
+  .card-content h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0e0807;
+  }
+  .card-content img {
+    width: 263px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    object-position:top;
+  }
+
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
+/* esta linea es el msj de ayuda*/
+.opinio-seption{
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(160deg, #f89757 , #723a1a 90%);
+    color: #513500;
+}
+
+.tooltip {
+font-size: 25px;
+color: #3b2618;
+font-weight: bold;
+}
+  /* aqui es el nombre usario msj*/
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    }
+
+  /* aqui es el cuadro de la opinion*/
+  input[type="text"],textarea {
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    background-color: #c59f6b;
+    outline: none;
+    border: 2px solid #ae8000;
+    color: #266f29;
+    font-size: 1.2rem;
+  }
+  input::placeholder,textarea::placeholder{
+    color: #3d8840  ;
+  }
+  input:focus,textarea:focus{
+    border-color: #371d02;
+  }
+
+  button [type="button"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+}
+button:hover{
+  background-color: #d34e4e;
+}
+  .content {
+    padding-top: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  .nombre-opinion {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+  }
+  .texto-opinion {
+    margin-bottom: 0px;
+  }
+  
+
+    
+
+

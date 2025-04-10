@@ -1,0 +1,103 @@
+<!DOCTYPE htm1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda de tamales</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+         
+  </head>
+  <body>
+
+    <div class="container">
+      
+      <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo" alt="imagen"> 
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15795.294035470932!2d-75.49143541590833!3d8.220497069536128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5ba739422ce1cb%3A0xcd9a01dce2ad8644!2sTamal%20o%20pastel%3F!5e0!3m2!1ses!2sco!4v1744151852146!5m2!1ses!2sco" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+      <h1>tienda de tamales</h1>
+      <section class="description">
+
+
+        
+          <div class="fondo">
+              <img src="{{ url_for('static', filename='img/fondo.jpg') }}" class="background-img" alt="fondo de la tienda">
+          </div>
+          <div class="texto"> 
+              <p>bienvenidos a nuestra tienda
+                  de tamales. ofrecemos una variedad de tamales
+                  tradicionales, hechos con ingredientes frescos 
+                  y de alta calidad.</p>
+
+          </div>
+          <div class="boton-whatsapp">
+              <a href="https://wa.me/3126595723"
+              target="_blank"> <button>domicilio</button></a>
+          </div>
+      </section>
+
+      <div id="container">
+
+          <section class="card-container">
+              <div class="card">
+                  <div class="card-content">
+                    <h2>Tamal</h2>
+                    <img src="{{ url_for('static', filename='img/f1.jpg') }}" alt="Imagen de la tarjeta">
+                  </div>
+                </div>
+              <div class="card">
+                  <div class="card-content">
+                    <h2>pastel de arroz-cerdo</h2>
+                    <img src="{{ url_for('static', filename='img/f2.jpg') }}" alt="Imagen de la tarjeta">
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-content">
+                    <h2>tamal de masa-cerdo</h2>
+                    <img src="{{ url_for('static', filename='img/f3.jpg') }}" alt="Imagen de la tarjeta">
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-content">
+                    <h2>Tamal</h2>
+                    <img src="{{ url_for('static', filename='img/f4.jpg') }}" alt="Imagen de la tarjeta">
+                  </div>
+                </div>
+            </section>
+
+      </div>
+
+    </div>
+
+    <section class="opinio-seption">
+          <p class="tooltip">calificanos y ayuda a otros usuarios a encontrar lo que buscan...</p>
+
+          <div>
+            <label for="nombreUsuario">Nombre:</label>
+            <input type="text" id="nombreUsuario" placeholder="Tu nombre">
+        </div>
+
+        <div>
+          <label for="opinionTexto"></label>
+          <textarea id="opinionTexto" placeholder="Escribe aquí tu opinión" rows="4" cols="50"></textarea>
+      </div>
+
+      <button type="button" onclick="agregarOpinion()">Enviar opinión</button>
+
+      <div class="content" id="opinionesContainer">
+          </div>
+    </section>
+    
+    
+  
+
+
+
+
+
+     <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
