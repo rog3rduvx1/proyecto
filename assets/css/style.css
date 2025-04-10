@@ -16,9 +16,10 @@
   position: absolute;
     width: 300px;
     z-index: 1;
-    top: 0;
+    top: 150px;
     
 }
+
 .mapa {
    position: absolute;
    left: 0;
