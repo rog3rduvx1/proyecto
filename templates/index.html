@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tienda de tamales</title>
 
-    <link rel="stylesheet" href="{{ url_for('assets', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
          
   </head>
   <body>
 
     <div class="container">
       
-      <img src="img/logo.jpg" class="logo" alt="imagen"> 
+      <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo" alt="imagen"> 
       <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15795.294035470932!2d-75.49143541590833!3d8.220497069536128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5ba739422ce1cb%3A0xcd9a01dce2ad8644!2sTamal%20o%20pastel%3F!5e0!3m2!1ses!2sco!4v1744151852146!5m2!1ses!2sco" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -24,7 +24,7 @@
 
         
           <div class="fondo">
-              <img src="img/fondo.jpg" class="background-img" alt="fondo de la tienda">
+              <img src="{{ url_for('static', filename='img/fondo.jpg') }}" class="background-img" alt="fondo de la tienda">
           </div>
           <div class="texto"> 
               <p>bienvenidos a nuestra tienda
@@ -45,25 +45,25 @@
               <div class="card">
                   <div class="card-content">
                     <h2>Tamal</h2>
-                    <img src="img/f5.jpg" alt="Imagen de la tarjeta">
+                    <img src="{{ url_for('static', filename='img/f1.jpg') }}" alt="Imagen de la tarjeta">
                   </div>
                 </div>
               <div class="card">
                   <div class="card-content">
                     <h2>pastel de arroz-cerdo</h2>
-                    <img src="img/f2.jpg" alt="Imagen de la tarjeta">
+                    <img src="{{ url_for('static', filename='img/f2.jpg') }}" alt="Imagen de la tarjeta">
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-content">
                     <h2>tamal de masa-cerdo</h2>
-                    <img src="img/f3.jpg" alt="Imagen de la tarjeta">
+                    <img src="{{ url_for('static', filename='img/f3.jpg') }}" alt="Imagen de la tarjeta">
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-content">
                     <h2>Tamal</h2>
-                    <img src="img/f4.jpg" alt="Imagen de la tarjeta">
+                    <img src="{{ url_for('static', filename='img/f4.jpg') }}" alt="Imagen de la tarjeta">
                   </div>
                 </div>
             </section>
@@ -98,6 +98,6 @@
 
 
 
-     <script src="{{ url_for('assets', filename='main.js') }}"></script>
+     <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>
